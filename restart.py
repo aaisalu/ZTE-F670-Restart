@@ -38,7 +38,10 @@ os.environ["WDM_LOG"] = str(logging.NOTSET)
 
 class web_driver:
     options = Options()
-    options.add_argument("-headless")
+    options.add_argument("--headless")
+
+    # For chrome Browser
+    # options.add_argument("--headless=new")
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
     options.add_argument("--log-level=3")
